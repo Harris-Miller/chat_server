@@ -15,7 +15,7 @@ var usernames = {};
 io.sockets.on('connection', function(socket) {
 
 	socket.on('sendchat', function(data) {
-		io.sockets.emit('updatechat', socket.username, data);
+		io.sockets.emit('updatechat', socket.username, data.message);
 	});
 
 	socket.on('adduser', function(username) {

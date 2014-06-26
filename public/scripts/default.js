@@ -26,9 +26,11 @@ function updateUserList(data) {
 };
 
 function sendMessage() {
-	var message = $('#data').val();
+	var data = {
+		message: $('#data').val()
+	}
 	$('#data').val('');
-	socket.emit('sendchat', message);
+	socket.emit('sendchat', data);
 	$('#data').focus();
 };
 
