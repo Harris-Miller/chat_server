@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WebSocket Chatroom!</title>
+	<link rel="stylesheet" href="default.css">
+</head>
+<body>
+	
+	<div class="userContainer">
+		<h2>Users</h2>
+		<div id="users"></div>
+	</div>
+	<div class="conversationContainer">
+		<input type="text" id="data">
+		<input type="button" id="datasend" value="send">
+		<div id="conversation"></div>
+	</div>
+
+<script src="jquery-1.10.2.js"></script>
+<script src="socket.io.js"></script>
+<script src="default.js"></script>
+</body>
+</html>
