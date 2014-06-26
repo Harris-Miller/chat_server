@@ -1,0 +1,15 @@
+{
+	"validthis": true,
+	"curly": true,
+	"eqnull": true,
+	"eqeqeq": false,
+	"undef": true,
+	"expr": true,
+	"globals": {
+		"module": true,
+		"jQuery": true,
+		"window": true,
+		"document": true,
+		"console": true,
+	}
+}
