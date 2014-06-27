@@ -2,7 +2,7 @@
 var socket;
 
 $(function() {
-	socket = io.connect('http://localhost:8080');
+	socket = io();
 	socket.on('connect', addUser);
 	socket.on('updatechat', processMessage);
 	socket.on('updateusers', updateUserList);
