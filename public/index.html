@@ -7,16 +7,17 @@
 	<link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-	
-	<div class="userContainer">
-		<h2>Users</h2>
-		<div id="users"></div>
-	</div>
-	<div class="conversationContainer">
+<main class="container">
+	<div class="conversationContainer col-md-9 col-md-push-3">
 		<input type="text" id="data">
 		<input type="button" id="datasend" value="send">
 		<div id="conversation"></div>
 	</div>
+	<div class="userContainer col-md-3 col-md-pull-9">
+		<h2>Users</h2>
+		<div id="users"></div>
+	</div>
+</main>
 
 <script src="scripts/jquery-1.10.2.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
